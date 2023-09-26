@@ -1,4 +1,5 @@
 <?php
+include "CRUD/delete.php";
 
 $server = "localhost:3306";
 $user = "root";
@@ -11,6 +12,7 @@ if (!$conn) {
     die("Connection faild");
 } else {
     #insert();
+    delete();
 }
 
 function insert()
@@ -28,6 +30,6 @@ function insert()
             die("Query failed.<br>" . mysqli_error($conn));
         }
     }
+    $name = null;
+    $name = null;
 }
-
-
