@@ -1,10 +1,10 @@
 <?php
 include "CRUD/delete.php";
 
-$server = "localhost:3306";
-$user = "root";
-$password = "";
-$db = "Teste";
+$server = getenv("containers-us-west-65.railway.app:6045");
+$user = getenv("root");
+$password = getenv("Xs55P1B1HsdP9qwfq3Mc");
+$db = getenv("railway");
 
 $conn = mysqli_connect($server, $user, $password, $db);
 
